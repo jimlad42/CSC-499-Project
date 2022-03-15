@@ -1,3 +1,5 @@
+import sys
+
 def main():
     #Variables
     originalFile = open("Sort Me.txt", "r") #The original file we're getting our info from.
@@ -27,14 +29,21 @@ def main():
         #Stick the shortest at the end of the new list, removing it from the old list.
         finalList.append(list.pop(smallestIndex))
 
+    #If we have a -r argument, reverse it.
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "-r":
+            finalList.reverse()
 
     #Output to the result file.
+
     for line in finalList:
         resultFile.write(line + "\n")
 
     #Close our files.
     resultFile.close()
     originalFile.close()
+
+
 
 
 if __name__ == "__main__":
