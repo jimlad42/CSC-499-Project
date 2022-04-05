@@ -2,8 +2,8 @@ import sys
 
 def main():
     #Variables
-    originalFile = open("Sort Me.txt", "r") #The original file we're getting our info from.
-    resultFile = open("Sorted List.txt", "w+") #The resulting file we're making.
+    originalFile = open("SortMe.txt", "r") #The original file we're getting our info from.
+    resultFile = open("SortedList.txt", "w+") #The resulting file we're making.
     list = originalFile.readlines() #The original list in array form.
     finalList = [] #The final, resulting list.
 
