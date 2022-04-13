@@ -27,5 +27,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run Test
-        run: sh .github/Test.sh
+        run: sh ./Test.sh
         shell: bash
