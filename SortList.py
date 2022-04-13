@@ -10,7 +10,7 @@ def main():
 
     #Clean the list of \n and spaces.
     for i in range(len(list)):
-        #list[i] = list[i].strip()
+        list[i] = list[i].strip()
 
     #(I was prepared to figure out an alphabetical sort, but I'll work with what I got.)
     #Sort the list alphabetically
